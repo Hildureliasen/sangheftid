@@ -1,5 +1,5 @@
 ---
-import Header from "../components/Header.astro";
+import StartHeader from "../components/StartHeader.astro";
 import Footer from "../components/Footer.astro";
 import '../styles/tailwind.css';
 import 'animate.css';
@@ -16,8 +16,8 @@ const { title } = Astro.props;
 		<title>{Astro.props.title}</title>
 	</head>
 	<body class="min-h-screen flex flex-col pt-10 bg-tekst-primary-beige">
-		<header class="z-50 pt-10 px-16">
-			<Header></Header>
+		<header class="z-50">
+			<StartHeader></StartHeader>
 		</header>
 
 		<main class="flex-grow">
