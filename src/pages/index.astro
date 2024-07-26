@@ -2,8 +2,137 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 ---
+
+<MainLayout title="Titel">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Titel</title>
+      <link href="/path/to/your/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_frontp.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-28">
+        <h1 class="text-center font-kalnia text-tekst-primary-orange font-medium text-4xl">Sangheftið</h1>
+      </div>
+      <div class="p-4 flex justify-center w-full">
+        <div class="text-left">
+          <a href="/sang1" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 1. Tað er leygarkvøld</a>
+          <a href="/sang2" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 2. Jeg er så glad</a>
+          <a href="/sang3" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 3. _</a>
+          <a href="/sang4" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 4. _</a>
+          <a href="/sang5" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 5. Skuld gammel venskab</a>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>
+
+
+
+
+
+
+<!-- ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+---
+
+<MainLayout title="Titel">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Titel</title>
+      <link href="/path/to/your/tailwind.css" rel="stylesheet" />
+    </head>
+    <body class="bg-gray-100 text-center m-0 p-0 font-sans">
+      <div class="pt-28">
+        <h1 class="font-kalnia text-tekst-primary-orange text-4xl">Sangheftið</h1>
+      </div>
+      <div class="p-4">
+        <a href="/sang1" class="block my-2 py-2 px-4 text-orange-600 hover:bg-red-800 hover:text-white">Sang 1: Happy Birthday</a>
+        <a href="/sang2" class="block my-2 py-2 px-4 text-orange-600 hover:bg-red-800 hover:text-white">Sang 2: Jeg er så glad</a>
+        <a href="/sang3" class="block my-2 py-2 px-4 text-orange-600 hover:bg-red-800 hover:text-white">Sang 3: Skuld gammel venskab</a>
+      </div>
+      <img src="bg_frontp.svg" alt="" class="w-full" />
+    </body>
+    </html>
+  </article>
+</MainLayout> -->
+
+<!-- 
+
+**************\\************** -->
+
+
+<!-- ---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+---
 <MainLayout title="Titel">
 	<article>
-		<p>Index indhold</p>
+		
+		
+		<!DOCTYPE html>
+<html lang="da">
+<head class="p-0 m-0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+     
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            color: rgb(165, 71, 42);
+            text-decoration: none;
+
+        }
+        a:hover {
+            background-color: #5e2112;
+        }
+    </style>
+</head>
+<body>
+	<div>
+        <h1 class="font-kalnia text-tekst-primary-orange pt-28" style="font-size: 42px;">Sangheftið</h1>
+	</div>
+    <div class="container">
+        <a href="/sang1">Sang 1: Happy Birthday</a>
+        <a href="/sang2">Sang 2: Jeg er så glad</a>
+        <a href="/sang3">Sang 3: Skuld gammel venskab</a>
+
+    </div>
+	<img src="bg_frontp.svg" alt="" />
+</body>
+</html>
+
+
+
 	</article>
-</MainLayout>
+</MainLayout> -->
+
+

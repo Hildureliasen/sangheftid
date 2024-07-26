@@ -9,23 +9,23 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap">
+    <link rel="stylesheet" href="/path/to/your/tailwind.css">
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
-	<body>
-
+	<body class="min-h-screen flex flex-col pt-10 bg-tekst-primary-beige">
 		<header>
 			<Header></Header>
 		</header>
-		
-		<main>
+
+		<main class="flex-grow">
 			<slot />
 		</main>
 
-		<footer>
+		<footer class="mt-auto pb-16 text-center">
 			<Footer></Footer>
 		</footer>
-			
 	</body>
 </html>
