@@ -1,0 +1,62 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Sangur til Frælsi">
+  <article>
+    <!DOCTYPE html>
+    <html lang="fo">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sangur til Frælsi</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Add the following CSS to set an SVG background image */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Adjust the background to cover the entire screen */
+          background-position: center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-20 space-y-4">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Sangur til Frælsi</h2>
+        <div class="px-14 space-y-8 pb-16">
+          <div class="space-y-6">
+            <div>
+              <p>Tú ert tað fagrasta eg veit.</p>
+              <p>Tú ert tað dýrasta á foldum.</p>
+              <p>Tú ert sum stjørnurnar,</p>
+              <p>Sum vindurin,</p>
+              <p>Sum brimbrotið,</p>
+              <p>Sum fuglarnir,</p>
+              <p>Sum blómurnar á bønum.</p>
+            </div>
+            <div>
+              <p>Tú ert trygdarstjørna mín</p>
+              <p>Tú ert mín trúgv, min vón, mín elskhug'.</p>
+              <p>Tú ert mítt blóð,</p>
+              <p>Og míni lungu,</p>
+              <p>Míni eygu,</p>
+              <p>Mínar herðar,</p>
+              <p>Mínar hendur og mítt hjarta.</p>
+            </div>
+            <div>
+              <p>Frælsið er títt vakra navn.</p>
+              <p>Góðlæti er tín stolta móðir.</p>
+              <p>Rættvísið er tín bróðir,</p>
+              <p>Friðurin tín systur,</p>
+              <p>Stríðið er tín faðir,</p>
+              <p>Framtíðin tín ábyrgd.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

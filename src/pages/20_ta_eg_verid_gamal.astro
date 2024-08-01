@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Tá eg verði gamal">
+  <article>
+    <!DOCTYPE html>
+    <html lang="fo">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tá eg verði gamal</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Add the following CSS to set an SVG background image */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Adjust the background to cover the entire screen */
+          background-position: center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-20 space-y-4">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Tá eg verði gamal</h2>
+        <div class="px-14 space-y-8 pb-16">
+          <div class="space-y-6">
+            <div>
+              <p>Tá eg verði gamal og sólin fer í kav</p>
+              <p>góða vilt tú hjálpa mær at sigla yvir hav</p>
+              <p>Eg skal vitja gamlar gøtur gamlar vinir við</p>
+              <p>minnast aftur góðar løtur og finna sálarfrið</p>
+            </div>
+            <div>
+              <p>Tá eg verði gamal og hárið verður grátt</p>
+              <p>smíla tíni vøkru eygu tú teskar "góða nátt"</p>
+              <p>Eg droymi meg í eydnuríkið tú ert drotning her</p>
+              <p>næsta morgun vakni aftur síggi at so er</p>
+            </div>
+            <div>
+              <p>Tá eg verði gamal og dagur verður nátt</p>
+              <p>sálarfriðurin er komin inn um duragátt,</p>
+              <p>tíni vøkru eygu spegla tína sál</p>
+              <p>tak so báðar mínar hendur og fylg tú mær á mál</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

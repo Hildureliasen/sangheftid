@@ -1,0 +1,66 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Seinasta vaktin">
+  <article>
+    <!DOCTYPE html>
+    <html lang="fo">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Seinasta vaktin</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Add the following CSS to set an SVG background image */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Adjust the background to cover the entire screen */
+          background-position: center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-20 space-y-4">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Seinasta vaktin</h2>
+        <div class="px-14 space-y-8 pb-16">
+          <div class="space-y-6">
+            <div>
+              <p>Alt, hann átti á fold, var ein koyggja,</p>
+              <p>og hann kundi seg heima umborð;</p>
+              <p>hann var gamal og lá til at doyggja,</p>
+              <p>og hann teskaði eymt hesi orð:</p>
+            </div>
+            <div>
+              <p class="italic">„Leið meg einaferð enn út á dekkið,</p>
+              <p class="italic">lat meg ganga ta seinastu vakt,</p>
+              <p class="italic">lat meg stýra tað seinasta strekkið,</p>
+              <p class="italic">áðrenn skipið til kei hevur lagt.</p>
+            </div>
+            <div>
+              <p>Hetta far var mítt heim gjøgnum lívið,</p>
+              <p>og tað bar meg í suður og norð.</p>
+              <p>Nú til hvíldar eg ruraður blívi</p>
+              <p>mína seinastu frívakt umborð.</p>
+            </div>
+            <div>
+              <p>Tá mín deksvakt er komin at enda,</p>
+              <p>og mítt tørn til at stýra er av,</p>
+              <p>vil eg ongantíð út aftur venda</p>
+              <p>á tað stóra og brúsandi hav.</p>
+            </div>
+            <div>
+              <p class="italic">Leið meg einaferð enn út á dekkið,</p>
+              <p class="italic">lat meg ganga ta seinastu vakt,</p>
+              <p class="italic">lat meg stýra tað seinasta strekkið,</p>
+              <p class="italic">áðrenn skipið til kai hevur lagt.“</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>
