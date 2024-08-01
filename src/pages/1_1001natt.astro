@@ -1,0 +1,61 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Titel">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sangur 1</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">1001 nátt </h2>
+        <div class="px-10 space-y-8 pb-16 ">
+            <div>
+                <p>Eg vil halda fast um teg, eg vil kína tær eymt.</p>
+                <p>Eg man ongantíð skilja, tað sum mær er hent.</p>
+                <p>Eg má framvegis undrast á kærleikans mátt.</p>
+                <p>Eftir 1001 nátt.</p>
+            </div>
+
+            <div>
+                  <p>Eg vil taka hvønn dag, sum hann kemur og fer.</p>
+          <p>Tí tú letur meg vita, hvat hvør dagur ber.</p>
+          <p>Og eg elski og hevji teg líka so hátt.</p>
+          <p>Eftir 1001 nátt.</p>        
+            </div>
+
+          <div>
+            <p class="italic">Hvat um tað, um tíð fór til spillis.</p>
+            <p class="italic">Hvat um tað, um tað tók sína tíð.</p>
+            <p class="italic">Tá vit fingu at síggja, </p>
+             <p class="italic">At einki er lánt.</p>
+             <p class="italic">Eftir 1001 nátt.</p>
+          </div>
+
+
+          <p>Og eg elski og hevji teg líka so hátt...</p>
+
+            <p class="italic">Hvat um tað, um tíð fór til spillis.</p>
+          
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

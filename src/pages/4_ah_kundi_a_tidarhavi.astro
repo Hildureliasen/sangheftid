@@ -1,0 +1,54 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Titel">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sangur 3</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Áh, kundu á tíðarhavi</h2>
+        <div class="px-14 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>Áh, kundu á tíðarhavi</p>
+              <p>vit akker kastað ein dag</p>
+              <p>tá vit hava eydnuna vunnið</p>
+              <p>so hon ikki rýmdi avstað</p>
+            </div>
+            <div>
+              <p>Tíðin, legg tínar veingir</p>
+              <p>saman bert hesa stund</p>
+              <p>meðan eg sælur kyssi</p>
+              <p>mítt sólfagra ástarsprund</p>
+            </div>
+            <div>
+              <p>Og løtan hin signaða, ríka</p>
+              <p>á kvirru, ástheitu nátt</p>
+              <p>áh, lat meg í kossinum doyggja</p>
+              <p>tá hvíli eg æviga gott</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

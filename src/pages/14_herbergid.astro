@@ -1,0 +1,70 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Herbergið">
+  <article>
+    <!DOCTYPE html>
+    <html lang="fo">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Herbergið</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Add the following CSS to set an SVG background image */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Adjust the background to cover the entire screen */
+          background-position: center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-20 space-y-4">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Herbergið</h2>
+        <div class="px-14 space-y-8 pb-16">
+          <div class="space-y-6">
+            <div>
+              <p>Vit eru heimleysir, og vit hava ongar pengar.</p>
+              <p>Renna runt í Havnini, sum nakrir ólukku fangar.</p>
+            </div>
+            <div>
+              <p>Fólk tey flenna, tá vit koma framvið.</p>
+              <p>Aldrin er tað nakar, sum situr við okkara lið.</p>
+              <p>Vit búgva á Herberginum.</p>
+              <p>Vit hava eina heila madrass í part.</p>
+              <p>Vit gingu einaferð í skúla, men har hava vit einki lært.</p>
+            </div>
+            <div>
+              <p>Vit búgva á Herberginum.</p>
+              <p>Vit hava eitt heilt jogurt í part.</p>
+              <p>Vit dugdu einaferð at arbeiða, men nú hava vit</p>
+              <p>gloymt alt, sum vit hava lært, sum vit hava lært.</p>
+            </div>
+            <div>
+              <p>Her eru grønlendarir.</p>
+              <p>Tað kemur ein nýggjur hvørt ár.</p>
+              <p>Og teir verða genspleisaðir, tá eggini eru klár.</p>
+              <p>Ja ja, fólk tey flenna, tá teir koma framvið.</p>
+              <p>Aldrin er tað nakað, sum situr vit teirra lið. Jaja.</p>
+            </div>
+            <div>
+              <p>Vit búgva á Herberginum.</p>
+              <p>Vit hava eina heila madrass í part.</p>
+              <p>Vit gingu einaferð í skúla, men har hava vit einki lært.</p>
+              <p>Vit búgva á Herberginum.</p>
+              <p>Vit hava eitt heilt jogurt í part.</p>
+              <p>Vit dugdu jú einaferð at arbeiða,</p>
+              <p>men nú hava vit gloymt alt, sum vit hava lært, sum vit hava lært,</p>
+              <p>sum vit hava lært, sum vit hava lært.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

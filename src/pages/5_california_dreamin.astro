@@ -1,0 +1,71 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="California Dreamin'">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>California Dreamin'</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">California Dreamin'</h2>
+        <div class="px-14 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>All the leaves are brown</p>
+              <p>and the sky is grey</p>
+              <p>I've been for a walk</p>
+              <p>on a winter's day</p>
+              <p>I'd be safe and warm</p>
+              <p>if I was in L.A</p>
+              <p>California Dreamin'</p>
+              <p>on such a winter's day</p>
+            </div>
+            <div>
+              <p>Stopped into a church</p>
+              <p>I passed along the way</p>
+              <p>Well, I got down on my knees</p>
+              <p>And I pretend to pray</p>
+              <p>You know the preacher likes the cold</p>
+              <p>Preacher likes the cold</p>
+              <p>He knows I'm gonna stay</p>
+              <p>California dreaming</p>
+              <p>On such a winter's day</p>
+            </div>
+            <div>
+              <p>All the leaves are brown</p>
+              <p>and the sky is grey</p>
+              <p>I've been for a walk</p>
+              <p>on a winter's day</p>
+              <p>If I didn’t tell her</p>
+              <p>I could leave today</p>
+              <p>California Dreamin'</p>
+              <p>on such a winter's day</p>
+            </div>
+            <div>
+              <p>California dreaming</p>
+              <p>on such a winter's day</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

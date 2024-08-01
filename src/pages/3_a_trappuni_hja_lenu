@@ -1,0 +1,76 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Titel">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sangur 2</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Tá poppurin úr Liverpool tók land á fyrsta sinni</h2>
+        <div class="px-14 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>Tá poppurin úr Liverpool tók land á fyrsta sinni, </p>
+              <p>sótu vit á trappuni hjá Lenu meir og minni. </p>
+              <p>Ímillum belj og hundagoyggj vit hoyrdu nýggja ljóðið, </p>
+              <p>sum harafturat varð álað sundur av transistorskróvi. </p>
+              <p>Eg minnist gamla Ferdinand, so kvikliga sær vendi </p>
+              <p>og segði heilt alvorliga, at nú bleiv verðsins endi. </p>
+              <p>Hvat so, vit taka kjansin, immigrera tú til Pluto. </p>
+              <p>Vit høvdu bara Dandy, David Crockett-bløð og Ludo. </p>
+            </div>
+            <div>
+              <p>So upp á barrikadurnar - nú skuldið slagið standa. </p>
+              <p>Við hetjunum í baksýni vit tordu allan vanda. </p>
+              <p>Og fíggjindin var ein og hvør við borgarligum stætti </p>
+              <p>og allir teir í gummiskóm og allir teir í hatti. </p>
+              <p>Tann svári sálarklovningur í hesi nýggju trúnni </p>
+              <p>ímillum Sergeant Pepper og so tað at geva kúnni. </p>
+              <p>Hvør kann væl konsentrera seg um bæði tað at skapa </p>
+              <p>og Óla Hans við trillubøru fullari av skræpu. </p>
+            </div>
+            <div>
+              <p>Ja, 67 var herviligt hjá okkum bygdasviskum, </p>
+              <p>tá roykurin frá pípunum hekk yvir San Francisco. </p>
+              <p>Tað kendist nokkso undarligt - tað mugu vit væl siga – </p>
+              <p>at vera til ein happening í neystinum hjá Dia. </p>
+              <p>Vit royktu mangar feitar undir trappuni hjá Leivi. </p>
+              <p>Tá lotið lá tann rætta vegin, gekk hann sjálvur skeivur. </p>
+              <p>Og onkuntíð til stuttleika vit læntu bakaríið. </p>
+              <p>Ja, tað veit Gud, var bakarin so óður, at hann spýði. </p>
+            </div>
+            <div>
+              <p>So komu vit til 80’ini - tey undarligu tvøru. </p>
+              <p>Øll gomul ideal vórðu rullaði í tjøru. </p>
+              <p>Jens Petur helt, at her var ikki meir at vera eftir. </p>
+              <p>Stakk høvdið inn í mikroovnin - stokti tað í pettir. </p>
+              <p>Eg siti her í køkini og havi hug at skríggja, </p>
+              <p>tí onkur her í grannalagnum spælir hetta nýggja. </p>
+              <p>Eg stari gjøgnum vindeyga í maktasleysum sinni. </p>
+              <p>Tey sita jú enn á trappuni hjá Lenu meir og minni.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

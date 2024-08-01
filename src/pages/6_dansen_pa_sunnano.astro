@@ -1,0 +1,66 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Dansen på Sunnanö">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dansen på Sunnanö</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Dansen på Sunnanö</h2>
+        <div class="px-12 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>Där går en dans på Sunnanö, där dansar Rönnerdahl</p>
+              <p>Med lilla Eva Liljebäck på pensionatets bal</p>
+              <p>Och genom fönstren strömmar in från sommarnatten sval</p>
+              <p>Doft av syrener och jasmin i pensionatets sal</p>
+            </div>
+            <div>
+              <p>Och lilla Evas arm är rund och fräknig hennes hy</p>
+              <p>Och röd som smultron hennes mun och klänningen är ny</p>
+              <p>-Herr Rönnerdahl, det är ju Ni som tar vem Ni vill ha</p>
+              <p>Bland alla kvinnor jorden runt, det har jag hört, haha!</p>
+            </div>
+            <div>
+              <p>-Att ta är inte min musik, nej fröken, men att ge</p>
+              <p>Jag slösar men är ändå rik så länge jag kan se</p>
+              <p>-Vad ser Ni då, herr Rönnerdahl, kanske min nya kjol?</p>
+              <p>-Ja, den och kanske något mer. Ta hit en bra fiol!</p>
+            </div>
+            <div>
+              <p>Det går en dans på Sunnanö till Rönnerdahls fiol</p>
+              <p>Där dansar vågor, dansar vind och snön som föll i fjol</p>
+              <p>Den virvlar där, där går ett brus igenom park och sal</p>
+              <p>Och sommarmorgonen står ljus och södergöken gal</p>
+            </div>
+            <div>
+              <p>Och lilla Eva dansar ut med fänrik Rosenberg</p>
+              <p>Och inga fräknar syns på hyn, så röd är hennes färg</p>
+              <p>Men Rönnerdahl är blek och skön och spelar som en gud</p>
+              <p>Och svävar i en högre rymd där Eva är hans brud</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

@@ -1,0 +1,60 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Dimmið">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dimmið</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Dimmið</h2>
+        <div class="px-14 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>Nú nemur náttin við smærur</p>
+              <p>Nú dimmir í blánandi líðum</p>
+              <p>Nú hoyrist so náttarvarur</p>
+              <p>ein meldur av ljódligum íðum.</p>
+            </div>
+            <div>
+              <p>Og áin um midnáttartíma</p>
+              <p>slær doyvandi ljóð út um fløtur</p>
+              <p>Og fólk eins og skuggar rýma</p>
+              <p>um tún og um døggvátar gøtur.</p>
+            </div>
+            <div>
+              <p>Og fjallið hvílist í kvirru</p>
+              <p>Bert dunið frá dimmilunda</p>
+              <p>Nú durvar eitt hav í kyrru</p>
+              <p>Til bóla seyðirnir stunda.</p>
+            </div>
+            <div>
+              <p>Nú blunda blóma og smæra</p>
+              <p>Nú skýmir um røkur og líðir</p>
+              <p>Ein varligur dráttur í tara</p>
+              <p>Nú náttin um oyggjarnar sígur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

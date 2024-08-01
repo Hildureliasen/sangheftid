@@ -1,0 +1,68 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Tað finst ein fragd">
+  <article>
+    <!DOCTYPE html>
+    <html lang="fo">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Lítli fuglur </title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Add the following CSS to set an SVG background image */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Adjust the background to cover the entire screen */
+          background-position: center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-20 space-y-4">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Lítli fuglur </h2>
+        <div class="px-14 space-y-8 pb-16">
+          <div class="space-y-6">
+            <div>
+              <p>Tað finst ein fragd í hvørji urt</p>
+              <p>Í øllum tí sum følnar burt</p>
+              <p>Har hoyrist ljóð av fugla ferð</p>
+              <p>Ið sigur einki ævigt er</p>
+            </div>
+            <div>
+              <p>Tað finnast orð í mannahuld</p>
+              <p>Ið siga ter alt gerst til mold</p>
+              <p>Sum náttamyrkur alt goyma man</p>
+              <p>Tí ikki undan tí tú sleppa kann</p>
+            </div>
+            <div>
+              <p>Men um jeg síggi ein lítlan fugl …</p>
+            </div>
+            <div>
+              <p>So kanska syngur tú ein sang</p>
+              <p>Um himlahválvu, fjørð og ong</p>
+              <p>Um smølu stovu og villan veg</p>
+              <p>Og trygga havn at hvíla seg</p>
+            </div>
+            <div>
+              <p class="italic">Men um jeg síggi ein lítlan fugl …</p>
+            </div>
+            <div>
+              <p>So førur vindur teg avstað</p>
+              <p>Tá minni um teg er fest á blað</p>
+              <p>Har finnist troyst, har finnist ein havn</p>
+              <p>Til tey vit sakna, ja, hvørt eitt navn</p>
+            </div>
+            <div>
+              <p class="italic">Men um jeg síggi ein lítlan fugl …</p>            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

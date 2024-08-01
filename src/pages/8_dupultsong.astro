@@ -1,0 +1,62 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Dupultsong">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dupultsong</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Dupultsong</h2>
+        <div class="px-14 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>Hygg nú var hon hvít og rein</p>
+              <p>lat seg í so fína</p>
+              <p>segði tú og hugdi út</p>
+              <p>og farið er at skýma..</p>
+              <p>men tú ert eisini rein sum snjó</p>
+              <p>og hárið fagurt glansar</p>
+              <p>varrarnar sum hjartablóð</p>
+              <p>og allar kenslur dansa</p>
+              <p>hóast kavin liggur tjúkkur nú</p>
+              <p>yvir bø og ong so er tað sum í tropunum</p>
+              <p>í okkara dupultsong</p>
+            </div>
+            <div>
+              <p>Tað sum dagur ikki sá</p>
+              <p>kann náttin ofta hoyra</p>
+              <p>segði tú og streyk mær blítt</p>
+              <p>og beit meg lætt í oyra</p>
+              <p>hóast kavin...</p>
+            </div>
+            <div>
+              <p>Dagar fáa ofta rós</p>
+              <p>tá sól til víðar fer</p>
+              <p>men tú mín góða</p>
+              <p>ikki fyrr enn morgun aftur er</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

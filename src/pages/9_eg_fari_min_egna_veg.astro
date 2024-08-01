@@ -1,0 +1,76 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Eg fari mín egna veg">
+  <article>
+    <!DOCTYPE html>
+    <html lang="da">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Eg fari mín egna veg</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Tilføj følgende CSS til at sætte SVG som baggrundsbillede */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Tilpasser baggrunden til at dække hele skærmen */
+          background-position: center; /* Centrerer baggrunden */
+          background-repeat: no-repeat; /* Forhindrer gentagelse af baggrunden */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans ">
+      <div class="pt-20 space-y-4 ">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Eg fari mín egna veg</h2>
+        <div class="px-14 space-y-8 pb-16 ">
+          <div class="space-y-6">
+            <div>
+              <p>Eg sigi sum tað er,</p>
+              <p>Sjálvt um tað fer,</p>
+              <p>At raka beinrakt í teg.</p>
+              <p>Vilt tú heldur hoyra okkurt annað,</p>
+              <p>So er einki at gera við tað</p>
+              <p>Her mítt bermannalag</p>
+            </div>
+            <div>
+              <p>Eitt lag um støðuna í dag,</p>
+              <p>Um at vit øll eru líkaglað</p>
+              <p>Og vaska hendur í blóð</p>
+              <p>Róp varsgóð</p>
+              <p>Áðrenn glóðin er slókna</p>
+              <p>Og fræðini tey</p>
+              <p>Gev mær blóð upp á breyð.</p>
+            </div>
+            <div>
+              <p>Eg fari mín egna veg</p>
+              <p>Man fara at laga seg</p>
+              <p>Eg vil heldur hava frið</p>
+              <p>Tað er eitt verri skil</p>
+              <p>Tá fuglurin fleyg</p>
+              <p>Bleiv reyvin reyð</p>
+              <p>Tað er okey tað er okey.</p>
+            </div>
+            <div>
+              <p>Legg teg, legg teg</p>
+              <p>í ein dag tað er alt sum behøvst</p>
+              <p>So at regnið, regnið</p>
+              <p>Kann skola burt alt tað sum er gjørt</p>
+            </div>
+            <div>
+              <p>Eg fari mín egna veg..</p>
+            </div>
+            <div>
+              <p>Ja eg vil heldur hava frið</p>
+              <p>Vil heldur hava frið</p>
+              <p>Tað er okey, tað er okey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>

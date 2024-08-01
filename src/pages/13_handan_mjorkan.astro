@@ -1,0 +1,78 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Header from "../components/Header.astro";
+---
+
+<MainLayout title="Handan mjørkan">
+  <article>
+    <!DOCTYPE html>
+    <html lang="fo">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Handan mjørkan</title>
+      <link href="/tailwind.css" rel="stylesheet" />
+      <style>
+        /* Add the following CSS to set an SVG background image */
+        body {
+          background-image: url('/bg_sang.svg');
+          background-size: cover; /* Adjust the background to cover the entire screen */
+          background-position: center; /* Center the background */
+          background-repeat: no-repeat; /* Prevent repeating the background */
+        }
+      </style>
+    </head>
+    <body class="m-0 p-0 font-sans">
+      <div class="pt-20 space-y-4">
+        <h2 class="text-center font-kalnia text-tekst-primary-orange font-medium text-3xl">Handan mjørkan</h2>
+        <div class="px-14 space-y-8 pb-16">
+          <div class="space-y-6">
+            <div>
+              <p>Úr mjørkanum trína tey aftur og aftur</p>
+              <p>ein ævigan dans uttan tónleik og orð,</p>
+              <p>úr gráanum sjóvar frá túsundtals fetum</p>
+              <p>men døggin er rein – ongar slóðir og spor.</p>
+            </div>
+            <div>
+              <p>-Og tøgnin syngur um løtur</p>
+              <p>um lívið í loyndari líð</p>
+              <p>og ferðir um marknaðar gøtur</p>
+              <p>ein dans handan fatan og tíð.</p>
+            </div>
+            <div>
+              <p>Og innan úr mjørkanum hómar tú skuggar</p>
+              <p>ein liðaleys fjøld dregur lívið at sær,</p>
+              <p>so lokkandi teskar úr ósæddum varrum</p>
+              <p>um frælsi á víddunum handan tín garð.</p>
+            </div>
+            <div>
+              <p>-Og tú slotar mót rekandi skýggjum</p>
+              <p>tevjar ein droymandi frið</p>
+              <p>tí, at lívið sum byrjar av nýggjum</p>
+              <p>er fjalt handan nærmasta lið.</p>
+            </div>
+            <div>
+              <p>-Men tú torir bert ikki at stíga</p>
+              <p>á gøtur títt eyga ei sær,</p>
+              <p>tú vilt heldur standa og bíða</p>
+              <p>við liðið ið ognaðist tær.</p>
+            </div>
+            <div>
+              <p>Og dansurin dregur teg aftur og aftur</p>
+              <p>ein droymandi longsul gerð sár í títt sinn,</p>
+              <p>og kanska ein dagin tú trínur um liðið</p>
+              <p>sum víðopið stendur og bjóðar tær inn.</p>
+            </div>
+            <div>
+              <p>-Og inni í mjørkanum brennur</p>
+              <p>eitt bleiktrandi lítilsvert bál</p>
+              <p>login, ið gerð at tú kennir</p>
+              <p>lívsneistan í tíni sál.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
+  </article>
+</MainLayout>
