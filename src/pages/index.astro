@@ -13,65 +13,68 @@ import StartPageLayout from "../layouts/StartPageLayout.astro";
       <title>Titel</title>
       <link href="/path/to/your/tailwind.css" rel="stylesheet" />
       <style>
-        /* Add the following CSS to set an SVG background image */
+        /* Ensure body has no margins or paddings */
         body {
           margin: 0;
           padding: 0;
+          height: 100vh;
+          overflow: hidden;
+          position: relative;
           background-image: url('/bg.svg');
-          background-size: cover; /* Adjusts the background to cover the entire screen */
-          background-position: center; /* Centers the background */
-          background-repeat: no-repeat; /* Prevents repeating the background */
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
         }
         .full-screen-img {
-          position: fixed; /* Fixes the image to the background */
+          position: absolute; /* Absolute positioning to stay fixed in viewport */
           top: 0;
           left: 0;
-          width: 100%;
-		  margin-top: 50%;
-          object-fit: cover; /* Ensures the image covers the whole area */
-          z-index: -1; /* Places the image behind other content */
+          width: 100vw; /* Full viewport width */
+          height: 100vh; /* Full viewport height */
+          /* object-fit: cover; Cover the entire viewport without distortion */
+          z-index: -1; /* Place behind other content */
         }
         .content {
           position: relative;
           z-index: 10;
-          margin-top: 100px; /* Adjust margin to ensure header does not overlap */
+          max-width: 80%;
+          margin: auto; /* Center horizontally */
+          text-align: center;
+          padding: 20px; /* Optional padding */
         }
         .scrollable {
-          max-height: calc(100vh - 100px); /* Adjust to keep space for header */
-          overflow-y: auto; /* Allows vertical scrolling */
+          max-height: calc(100vh - 100px); /* Adjust as necessary */
+          overflow-y: auto;
         }
       </style>
     </head>
     <body class="font-sans">
-      <div>
-        <img src="sidu.svg" alt="" class="full-screen-img px-3">
-      </div>
+      <img src="sidu.svg" alt="" class="full-screen-img px-2">
       <div class="content">
-        <h1 class="text-center font-kalnia text-tekst-primary-orange font-medium text-5xl ">Sangheftið</h1>
+        <h1 class="text-center font-kalnia text-tekst-primary-orange font-medium text-5xl">Sangheftið</h1>
         <div class="scrollable p-4 flex justify-center w-full">
           <div class="text-left pl-6">
-            <a href="/1_1001natt" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 1. 1001 nátt</a>
-            <a href="/2_angels" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 2. Angels</a>
-            <a href="/3_a_trappuni_hja_lenu" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 3. Á trappuni hjá Lenu</a>
-            <a href="/4_ah_kundi_a_tidarhavi" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 4. Áh kundi á tíðarhavi</a>
-            <a href="/5_california_dreamin" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 5. California dreamin</a>
-            <a href="/6_dansen_pa_sunnano" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 6. Dansen på Sunnanø</a>
-            <a href="/7_dimmid" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 7. Dimmið</a>
-            <a href="/8_dupultsong" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 8. Dupultsong</a>
-            <a href="/9_eg_fari_min_egna_veg" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 9. Eg fari mín egna veg</a>
-            <a href="/10_einki_er_sum_summarkvøld" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 10. Einki er sum summarkvøld </a>
-            <a href="/11_eitt_sunnukvold_i_plantasjuni" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 11. Eitt sunnukvøld í plantasjuni </a>
-            <a href="/12_eros" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 12. Eros</a>
-            <a href="/13_handan_mjorkan" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 13. Handan mjørkan</a>
-            <a href="/14_herbergid" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 14. Herbergið</a>
-            <a href="/15_i_simri" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 15. Í sirmi</a>
-            <a href="/16_litli_fuglur" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 16. Lítli fuglur</a>
-            <a href="/17_sangur_til_frælsi" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 17. Sangur til Frælsi</a>
-            <a href="/18_seinasta_vaktin" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 18. Seinasta vaktin</a>
-            <a href="/19_surligar_nætur_i_keypmannahavn" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 19. Súrligar nætur í Keypmannahavn</a>
-            <a href="/20_ta_eg_verid_gamal" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 20. Tá eg verið gamal</a>
-            <a href="/21_your_song" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium"> 21. Your song</a>
-			
+            <a href="/1_1001natt" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">1. 1001 nátt</a>
+            <a href="/2_angels" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">2. Angels</a>
+            <a href="/3_a_trappuni_hja_lenu" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">3. Á trappuni hjá Lenu</a>
+            <a href="/4_ah_kundi_a_tidarhavi" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">4. Áh kundi á tíðarhavi</a>
+            <a href="/5_california_dreamin" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">5. California dreamin</a>
+            <a href="/6_dansen_pa_sunnano" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">6. Dansen på Sunnanø</a>
+            <a href="/7_dimmid" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">7. Dimmið</a>
+            <a href="/8_dupultsong" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">8. Dupultsong</a>
+            <a href="/9_eg_fari_min_egna_veg" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">9. Eg fari mín egna veg</a>
+            <a href="/10_einki_er_sum_summarkvøld" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">10. Einki er sum summarkvøld </a>
+            <a href="/11_eitt_sunnukvold_i_plantasjuni" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">11. Eitt sunnukvøld í plantasjuni </a>
+            <a href="/12_eros" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">12. Eros</a>
+            <a href="/13_handan_mjorkan" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">13. Handan mjørkan</a>
+            <a href="/14_herbergid" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">14. Herbergið</a>
+            <a href="/15_i_simri" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">15. Í sirmi</a>
+            <a href="/16_litli_fuglur" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">16. Lítli fuglur</a>
+            <a href="/17_sangur_til_frælsi" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">17. Sangur til Frælsi</a>
+            <a href="/18_seinasta_vaktin" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">18. Seinasta vaktin</a>
+            <a href="/19_surligar_nætur_i_keypmannahavn" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">19. Súrligar nætur í Keypmannahavn</a>
+            <a href="/20_ta_eg_verid_gamal" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">20. Tá eg verið gamal</a>
+            <a href="/21_your_song" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">21. Your song</a>
           </div>
         </div>
       </div>
