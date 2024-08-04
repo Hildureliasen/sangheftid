@@ -31,50 +31,80 @@ import StartPageLayout from "../layouts/StartPageLayout.astro";
           left: 0;
           width: 100vw; /* Full viewport width */
           height: 100vh; /* Full viewport height */
-          /* object-fit: cover; Cover the entire viewport without distortion */
           z-index: -1; /* Place behind other content */
         }
         .content {
           position: relative;
           z-index: 10;
-          max-width: 80%;
+          max-width: 75%;
           margin: auto; /* Center horizontally */
           text-align: center;
           padding: 20px; /* Optional padding */
         }
         .scrollable {
-          max-height: calc(100vh - 100px); /* Adjust as necessary */
+          max-height: 65vh; /* Set the max height of the scrollable area */
           overflow-y: auto;
+          background-color: rgba(250, 241, 228, 0.388); /* Optional background for better readability */
+          padding: 10px;
+          border-radius: 3px; /* Rounded corners */
+          margin: 0 auto;
+          position: relative; /* For the 3D effect */
+  }
+
+        /* Webkit scrollbar styles */
+        .scrollable::-webkit-scrollbar {
+          width: 10px; /* Width of the scrollbar */
+
+        }
+        .scrollable::-webkit-scrollbar-thumb {
+          background: #d2681d50; /* Orange color for the thumb */
+          border-radius: 3px;
+        }
+        .scrollable::-webkit-scrollbar-thumb:hover {
+          background: #e65c00; /* Darker orange on hover */
+        }
+
+        .song-link {
+          display: block;
+          margin: 10px 0;
+          padding: 10px;
+          text-decoration: none;
+          color: #333; /* Adjust text color */
+          font-weight: 500; /* Font weight */
+          transition: background-color 0.3s; /* Smooth background transition */
+        }
+        .song-link:hover {
+          background-color: rgba(0, 0, 0, 0.1); /* Change background on hover */
         }
       </style>
     </head>
     <body class="font-sans">
       <img src="sidu.svg" alt="" class="full-screen-img px-3">
       <div class="content">
-        <h1 class="text-center font-kalnia text-tekst-primary-orange font-medium text-4xl">Sangheftið</h1>
-        <div class="scrollable p-4 flex justify-center w-full">
-          <div class="text-left pl-6">
-            <a href="/1_1001natt" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">1. 1001 nátt</a>
-            <a href="/2_angels" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">2. Angels</a>
-            <a href="/3_a_trappuni_hja_lenu" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">3. Á trappuni hjá Lenu</a>
-            <a href="/4_ah_kundi_a_tidarhavi" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">4. Áh kundi á tíðarhavi</a>
-            <a href="/5_california_dreamin" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">5. California dreamin</a>
-            <a href="/6_dansen_pa_sunnano" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">6. Dansen på Sunnanø</a>
-            <a href="/7_dimmid" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">7. Dimmið</a>
-            <a href="/8_dupultsong" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">8. Dupultsong</a>
-            <a href="/9_eg_fari_min_egna_veg" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">9. Eg fari mín egna veg</a>
-            <a href="/10_einki_er_sum_summarkvøld" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">10. Einki er sum summarkvøld </a>
-            <a href="/11_eitt_sunnukvold_i_plantasjuni" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">11. Eitt sunnukvøld í plantasjuni </a>
-            <a href="/12_eros" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">12. Eros</a>
-            <a href="/13_handan_mjorkan" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">13. Handan mjørkan</a>
-            <a href="/14_herbergid" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">14. Herbergið</a>
-            <a href="/15_i_simri" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">15. Í sirmi</a>
-            <a href="/16_litli_fuglur" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">16. Lítli fuglur</a>
-            <a href="/17_sangur_til_frælsi" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">17. Sangur til Frælsi</a>
-            <a href="/18_seinasta_vaktin" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">18. Seinasta vaktin</a>
-            <a href="/19_surligar_nætur_i_keypmannahavn" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">19. Súrligar nætur í Keypmannahavn</a>
-            <a href="/20_ta_eg_verid_gamal" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">20. Tá eg verið gamal</a>
-            <a href="/21_your_song" class="block my-2 py-2 px-4 text-tekst-primary-brun font-medium">21. Your song</a>
+        <h1 class="text-center font-kalnia text-tekst-primary-orange font-medium text-4xl mb-6">Sangheftið</h1>
+        <div class="scrollable">
+          <div class="text-left pl-5 ">
+            <a href="/1_1001natt" class="song-link">1. 1001 nátt</a>
+            <a href="/2_angels" class="song-link">2. Angels</a>
+            <a href="/3_a_trappuni_hja_lenu" class="song-link">3. Á trappuni hjá Lenu</a>
+            <a href="/4_ah_kundi_a_tidarhavi" class="song-link">4. Áh kundi á tíðarhavi</a>
+            <a href="/5_california_dreamin" class="song-link">5. California dreamin</a>
+            <a href="/6_dansen_pa_sunnano" class="song-link">6. Dansen på Sunnanø</a>
+            <a href="/7_dimmid" class="song-link">7. Dimmið</a>
+            <a href="/8_dupultsong" class="song-link">8. Dupultsong</a>
+            <a href="/9_eg_fari_min_egna_veg" class="song-link">9. Eg fari mín egna veg</a>
+            <a href="/10_einki_er_sum_summarkvøld" class="song-link">10. Einki er sum summarkvøld </a>
+            <a href="/11_eitt_sunnukvold_i_plantasjuni" class="song-link">11. Eitt sunnukvøld í plantasjuni </a>
+            <a href="/12_eros" class="song-link">12. Eros</a>
+            <a href="/13_handan_mjorkan" class="song-link">13. Handan mjørkan</a>
+            <a href="/14_herbergid" class="song-link">14. Herbergið</a>
+            <a href="/15_i_simri" class="song-link">15. Í sirmi</a>
+            <a href="/16_litli_fuglur" class="song-link">16. Lítli fuglur</a>
+            <a href="/17_sangur_til_frælsi" class="song-link">17. Sangur til Frælsi</a>
+            <a href="/18_seinasta_vaktin" class="song-link">18. Seinasta vaktin</a>
+            <a href="/19_surligar_nætur_i_keypmannahavn" class="song-link">19. Súrligar nætur í Keypmannahavn</a>
+            <a href="/20_ta_eg_verid_gamal" class="song-link">20. Tá eg verið gamal</a>
+            <a href="/21_your_song" class="song-link">21. Your song</a>
           </div>
         </div>
       </div>
